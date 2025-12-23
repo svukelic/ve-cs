@@ -1,35 +1,138 @@
-// Sample character data - in production, this would come from a database or API
-const characters = [
-    {
-        id: 'veckurius_cezar',
-        name: 'Veckurius Cezar',
-        alias: 'Vecko',
-        rank: 'Detective',
-        association: 'Regionalna Policija Esseg',
-        image: 'https://via.placeholder.com/300x400/2d2d2d/d4af37?text=Veckurius+Cezar',
-        jsonUrl: '/mnt/user-data/uploads/character_veckurius_cezar.json'
-    }
-    // Add more characters here as you create them
-];
-
+let characters = [];
 let currentBook = null;
+
+console.log('script.js loaded');
+
+// Helper function to extract image name from characterId or URL
+function extractImageName(characterId, jsonUrl) {
+    if (characterId) {
+        // Try to extract image name from characterId
+        // e.g., "veckurius_cezar" -> "veckurius"
+        const parts = characterId.split('_');
+        return parts[0];
+    } else {
+        // Fallback: extract from URL filename
+        const urlParts = jsonUrl.split('/');
+        const filename = urlParts[urlParts.length - 1];
+        const match = filename.match(/character_(\w+)/);
+        if (match) {
+            return match[1];
+        }
+    }
+    return '';
+}
+
+// Fetch data.json and load all characters
+async function loadCharacters() {
+    console.log('loadCharacters() called');
+    try {
+        console.log('Fetching data.json...');
+        const response = await fetch('https://svukelic.github.io/ve-cs/data.json');
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        console.log('Loaded data.json, characters count:', data.characters?.length);
+        
+        if (!data.characters || !Array.isArray(data.characters)) {
+            throw new Error('Invalid data.json format: characters array not found');
+        }
+        
+        // Fetch all character JSONs in parallel
+        const characterPromises = data.characters.map(async (jsonUrl) => {
+            try {
+                console.log('Fetching:', jsonUrl);
+                const charResponse = await fetch(jsonUrl);
+                if (!charResponse.ok) {
+                    throw new Error(`HTTP error! status: ${charResponse.status}`);
+                }
+                
+                const charData = await charResponse.json();
+                console.log('Loaded character:', charData.basicInfo?.fullName || charData.characterId);
+                
+                // Handle supporting cast file (contains array of characters)
+                if (charData.supportingCast && Array.isArray(charData.supportingCast)) {
+                    return charData.supportingCast.map(char => {
+                        const imageName = extractImageName(char.characterId, jsonUrl);
+                        return {
+                            id: char.characterId || '',
+                            name: char.basicInfo?.fullName || 'Unknown',
+                            alias: char.basicInfo?.aliases?.[0] || '',
+                            rank: char.basicInfo?.rank || char.basicInfo?.title || '',
+                            association: char.basicInfo?.association || '',
+                            image: `https://svukelic.github.io/ve-cs/images/${imageName}.png`,
+                            jsonUrl: jsonUrl,
+                            characterData: char
+                        };
+                    });
+                }
+                
+                // Handle single character file
+                const imageName = extractImageName(charData.characterId, jsonUrl);
+                return {
+                    id: charData.characterId || '',
+                    name: charData.basicInfo?.fullName || 'Unknown',
+                    alias: charData.basicInfo?.aliases?.[0] || '',
+                    rank: charData.basicInfo?.rank || '',
+                    association: charData.basicInfo?.association || '',
+                    image: `https://svukelic.github.io/ve-cs/images/${imageName}.png`,
+                    jsonUrl: jsonUrl,
+                    characterData: charData
+                };
+            } catch (error) {
+                console.error(`Error loading character from ${jsonUrl}:`, error);
+                return null;
+            }
+        });
+        
+        const loadedCharacters = await Promise.all(characterPromises);
+        console.log('All characters fetched, processing...');
+        
+        characters = loadedCharacters
+            .filter(char => char !== null)
+            .flat()
+            .filter(char => char !== null);
+        
+        console.log('Total characters after processing:', characters.length);
+        
+        // Initialize grid with loaded characters
+        initializeGrid();
+    } catch (error) {
+        console.error('Error loading data.json:', error);
+        alert('Failed to load character data: ' + error.message);
+    }
+}
 
 // Initialize character grid
 function initializeGrid() {
     const grid = document.getElementById('characterGrid');
     
+    if (!grid) {
+        console.error('Character grid element not found!');
+        return;
+    }
+    
+    grid.innerHTML = ''; // Clear existing content
+    
+    if (characters.length === 0) {
+        return;
+    }
+    
     characters.forEach(char => {
         const card = document.createElement('div');
         card.className = 'character-card';
-        card.onclick = () => openCharacterBook(char.jsonUrl);
+        card.onclick = () => openCharacterBook(char);
         
         card.innerHTML = `
-            <img src="${char.image}" alt="${char.name}">
+            <img src="${char.image}" alt="${char.name}" onerror="this.src='https://via.placeholder.com/300x400/2d2d2d/d4af37?text=${encodeURIComponent(char.name)}'">
             <div class="character-card-info">
                 <h3>${char.name}</h3>
                 ${char.alias ? `<p class="rank">"${char.alias}"</p>` : ''}
-                <p class="rank">${char.rank}</p>
-                <p>${char.association}</p>
+                ${char.rank ? `<p class="rank">${char.rank}</p>` : ''}
+                ${char.association ? `<p>${char.association}</p>` : ''}
             </div>
         `;
         
@@ -38,10 +141,17 @@ function initializeGrid() {
 }
 
 // Open book modal and load character data
-async function openCharacterBook(jsonUrl) {
+async function openCharacterBook(char) {
     try {
-        const response = await fetch(jsonUrl);
-        const data = await response.json();
+        let data;
+        
+        // Use stored character data if available, otherwise fetch from URL
+        if (char.characterData) {
+            data = char.characterData;
+        } else {
+            const response = await fetch(char.jsonUrl);
+            data = await response.json();
+        }
         
         displayCharacterBook(data);
         document.getElementById('bookModal').style.display = 'block';
@@ -359,8 +469,9 @@ function updateControls() {
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize on page load
-    initializeGrid();
+    console.log('DOMContentLoaded fired');
+    // Load characters from data.json
+    loadCharacters();
 
     // Modal close button
     document.querySelector('.close-btn').onclick = function() {

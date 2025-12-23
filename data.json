@@ -1,5 +1,11 @@
 {
-  "characters": [],
+  "characters": [
+    "https://svukelic.github.io/ve-cs/json/character_rydeovich_vladimir.json",
+    "https://svukelic.github.io/ve-cs/json/character_sek_yurity.json",
+    "https://svukelic.github.io/ve-cs/json/character_titovsky_zvrchko.json",
+    "https://svukelic.github.io/ve-cs/json/character_veckurius_cezar.json",
+    "https://svukelic.github.io/ve-cs/json/character_zekovich_lepus.json"
+  ],
   "world_bible": "",
   "plot": ""
 }
