@@ -7,7 +7,8 @@
     "dateOfBirth": "N/A",
     "placeOfBirth": "Esseg",
     "ethnicity": "Native",
-    "status": "alive"
+    "status": "alive",
+    "image": "https://svukelic.github.io/ve-cs/images/titovsky.png"
   },
   "physicalDescription": {
     "height": "180 cm",

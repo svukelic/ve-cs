@@ -8,7 +8,8 @@
     "dateOfBirth": "07/07/1941",
     "placeOfBirth": "Esseg",
     "ethnicity": "Native (implied)",
-    "status": "alive"
+    "status": "alive",
+    "image": "https://svukelic.github.io/ve-cs/images/rydeovich.png"
   },
   "physicalDescription": {
     "height": "185 cm",

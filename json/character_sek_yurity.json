@@ -2,13 +2,14 @@
   "characterId": "sek_yurity",
   "basicInfo": {
     "fullName": "Sek Yurity",
-    "aliases": ["[REDACTED]"],
+    "aliases": [],
     "association": "Regionalna Policija Esseg (Regional Police)",
     "rank": "Detective",
     "dateOfBirth": "[REDACTED]",
     "placeOfBirth": "[REDACTED]",
     "ethnicity": "Iron Army (Conqueror)",
-    "status": "alive"
+    "status": "alive",
+    "image": "https://svukelic.github.io/ve-cs/images/yurity.png"
   },
   "physicalDescription": {
     "height": "180 cm",

@@ -9,7 +9,8 @@
         "rank": "Medical Examiner",
         "dateOfBirth": "26/12/1939",
         "placeOfBirth": "Esseg",
-        "status": "alive"
+        "status": "alive",
+        "image": "https://svukelic.github.io/ve-cs/images/probehovsky.png"
       },
       "physicalDescription": {
         "height": "184 cm",
@@ -65,7 +66,8 @@
         "association": "Gradska Policija Esseg (City Police - different from Regional)",
         "dateOfBirth": "30/01/1945",
         "placeOfBirth": "Esseg",
-        "status": "alive"
+        "status": "alive",
+        "image": "https://svukelic.github.io/ve-cs/images/kosach.png"
       },
       "physicalDescription": {
         "height": "178 cm",

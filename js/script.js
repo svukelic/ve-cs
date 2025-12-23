@@ -56,14 +56,19 @@ async function loadCharacters() {
                 // Handle supporting cast file (contains array of characters)
                 if (charData.supportingCast && Array.isArray(charData.supportingCast)) {
                     return charData.supportingCast.map(char => {
-                        const imageName = extractImageName(char.characterId, jsonUrl);
+                        // Use image from JSON, fallback to old method if not available
+                        let imageUrl = char.basicInfo?.image;
+                        if (!imageUrl) {
+                            const imageName = extractImageName(char.characterId, jsonUrl);
+                            imageUrl = `https://svukelic.github.io/ve-cs/images/${imageName}.png`;
+                        }
                         return {
                             id: char.characterId || '',
                             name: char.basicInfo?.fullName || 'Unknown',
                             alias: char.basicInfo?.aliases?.[0] || '',
                             rank: char.basicInfo?.rank || char.basicInfo?.title || '',
                             association: char.basicInfo?.association || '',
-                            image: `https://svukelic.github.io/ve-cs/images/${imageName}.png`,
+                            image: imageUrl,
                             jsonUrl: jsonUrl,
                             characterData: char
                         };
@@ -71,14 +76,19 @@ async function loadCharacters() {
                 }
                 
                 // Handle single character file
-                const imageName = extractImageName(charData.characterId, jsonUrl);
+                // Use image from JSON, fallback to old method if not available
+                let imageUrl = charData.basicInfo?.image;
+                if (!imageUrl) {
+                    const imageName = extractImageName(charData.characterId, jsonUrl);
+                    imageUrl = `https://svukelic.github.io/ve-cs/images/${imageName}.png`;
+                }
                 return {
                     id: charData.characterId || '',
                     name: charData.basicInfo?.fullName || 'Unknown',
                     alias: charData.basicInfo?.aliases?.[0] || '',
                     rank: charData.basicInfo?.rank || '',
                     association: charData.basicInfo?.association || '',
-                    image: `https://svukelic.github.io/ve-cs/images/${imageName}.png`,
+                    image: imageUrl,
                     jsonUrl: jsonUrl,
                     characterData: charData
                 };
