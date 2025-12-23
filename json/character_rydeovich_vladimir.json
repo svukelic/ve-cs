@@ -1,0 +1,213 @@
+{
+  "characterId": "rydeovich_vladimir",
+  "basicInfo": {
+    "fullName": "Rydeovich Vladimir",
+    "aliases": [],
+    "association": "Regionalna Policija Esseg (Regional Police)",
+    "rank": "Detective",
+    "dateOfBirth": "07/07/1941",
+    "placeOfBirth": "Esseg",
+    "ethnicity": "Native (implied)",
+    "status": "alive"
+  },
+  "physicalDescription": {
+    "height": "185 cm",
+    "weight": "109 kg",
+    "hairColor": "Smeda (Brown)",
+    "eyeColor": "Smeđe (Brown)",
+    "scarsAndMarks": "None noted"
+  },
+  "background": {
+    "sections": [
+      {
+        "title": "Police Career",
+        "content": [
+          "Experienced detective with Regional Police",
+          "Known for thorough investigations",
+          "Occasionally bends rules to build cases",
+          "Has history of aggressive tactics"
+        ]
+      },
+      {
+        "title": "The Investigation",
+        "content": [
+          "Discovered Titovsky's drug smuggling network",
+          "Traced connection to Young Conquerors being used as smugglers",
+          "Specifically investigating Hal Cyon and Peni Tenz",
+          "Getting close to exposing the operation"
+        ]
+      }
+    ]
+  },
+  "personality": {
+    "coreTraits": [
+      "Dedicated investigator",
+      "Methodical and thorough",
+      "Sometimes uses excessive force to get results",
+      "More by-the-book than Veckurius, but willing to bend rules for the case"
+    ],
+    "motivations": [
+      "Breaking major crime cases",
+      "Stopping drug trade in Esseg",
+      "Professional pride in solving difficult investigations"
+    ]
+  },
+  "relationships": [
+    {
+      "character": "Zekovich",
+      "relationship": "Unknown enemy",
+      "details": [
+        "Recognized as threat to Titovsky's operation",
+        "Zekovich decided to eliminate and frame him",
+        "Doesn't know Zekovich is behind the attack until later"
+      ]
+    },
+    {
+      "character": "Hal Cyon & Peni Tenz",
+      "relationship": "Investigation targets",
+      "details": [
+        "Investigating them as part of smuggling network",
+        "Discovered their involvement with Titovsky",
+        "This information becomes crucial when he wakes"
+      ]
+    },
+    {
+      "character": "Sek & Veckurius",
+      "relationship": "Colleagues",
+      "details": [
+        "Colleagues in Regional Police",
+        "They review his cases after he's hospitalized",
+        "They discover he was being framed, not actually corrupt",
+        "He provides them with crucial information when he wakes"
+      ]
+    }
+  ],
+  "roleInStory": {
+    "sections": [
+      {
+        "title": "The Victim",
+        "content": [
+          "Ambushed by Zekovich at Hal/Titovsky meeting",
+          "Zekovich didn't anticipate him being there",
+          "Seriously wounded, put in medically induced coma"
+        ]
+      },
+      {
+        "title": "The Frame Job",
+        "content": [
+          "While comatose, Zekovich plants forged reports",
+          "Made to look like he was taking bribes, covering up crimes",
+          "Reports use his stolen signature but Zekovich's handwriting",
+          "Nearly destroys his reputation"
+        ]
+      },
+      {
+        "title": "The False Lead",
+        "content": [
+          "Sek/Veckurius initially think the case is about his corruption",
+          "Discovery that he's being framed shifts investigation",
+          "Handwriting analysis reveals Zekovich as forger"
+        ]
+      },
+      {
+        "title": "The Key Witness",
+        "content": [
+          "Wakes from coma in Chapter 5",
+          "Immediately arrested by corrupt Judge Muliera's order",
+          "Tells Sek/Veckurius: was investigating Hal and Peni Tenz",
+          "Reveals Peni was working with Hal in smuggling network",
+          "This information leads them to Young Conquerors connection"
+        ]
+      }
+    ]
+  },
+  "skillsAndAbilities": [
+    "Experienced investigator",
+    "Evidence analysis",
+    "Interview and interrogation",
+    "Persistent case building",
+    "Willing to use force when necessary"
+  ],
+  "notableMoments": [
+    {
+      "timing": "Before Story",
+      "description": "Investigating Titovsky's network, getting close"
+    },
+    {
+      "timing": "Before Story",
+      "description": "Ambushed and wounded at Hal/Titovsky meeting"
+    },
+    {
+      "timing": "Chapter 1-4",
+      "description": "In medically induced coma"
+    },
+    {
+      "timing": "Chapter 2",
+      "description": "His cases reviewed by Sek/Veckurius"
+    },
+    {
+      "timing": "Chapter 3",
+      "description": "Forged reports discovered, initially believed"
+    },
+    {
+      "timing": "Chapter 3",
+      "description": "Handwriting reveals he was framed"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Wakes up, immediately arrested"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Conversation with Sek/Veckurius in jail/hospital"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Names Peni Tenz as involved with Hal"
+    }
+  ],
+  "remarksAndAwards": [
+    {
+      "original": "Ukor za prekomjernu stetu pocinjenu tokom policijske akcije",
+      "translation": "Reprimand for excessive damage during police operation"
+    }
+  ],
+  "storySignificance": [
+    "His investigation sets the plot in motion",
+    "Being framed creates the initial mystery",
+    "His testimony redirects investigation to Young Conquerors",
+    "Represents dedicated cop caught in conspiracy"
+  ],
+  "thematicRole": [
+    {
+      "theme": "Collateral damage",
+      "description": "Caught in larger conspiracy"
+    },
+    {
+      "theme": "System failure",
+      "description": "Corrupt judge can arrest innocent cop"
+    },
+    {
+      "theme": "Persistence",
+      "description": "Even wounded and framed, provides key information"
+    },
+    {
+      "theme": "Professional dedication",
+      "description": "Was doing his job, paid the price"
+    }
+  ],
+  "additionalNotes": {
+    "characterFunction": [
+      "Catalyst: His investigation threatens Titovsky/Zekovich",
+      "Red Herring: Initially seems like corrupt cop",
+      "Information Source: Provides crucial breakthrough",
+      "Victim: Shows stakes of crossing the conspiracy"
+    ],
+    "aftermath": [
+      "Presumably cleared of false charges after truth revealed",
+      "Lost time in hospital and jail during investigation",
+      "May feel guilt for not stopping the smuggling network sooner",
+      "Potential role in Book 2 cleaning up aftermath"
+    ]
+  }
+}

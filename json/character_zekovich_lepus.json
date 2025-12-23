@@ -1,0 +1,270 @@
+{
+  "characterId": "zekovich_lepus",
+  "basicInfo": {
+    "fullName": "Zekovich Lepus",
+    "aliases": [],
+    "association": "Regionalna Policija Esseg (Regional Police)",
+    "rank": "Detective",
+    "dateOfBirth": "13/03/1953",
+    "placeOfBirth": "Esseg",
+    "ethnicity": "Native (secretly half-Conqueror through father)",
+    "age": "~22 years old (if story set ~1975)",
+    "status": "deceased"
+  },
+  "physicalDescription": {
+    "height": "197 cm",
+    "weight": "99 kg",
+    "hairColor": "Svijetloplava (Light blonde)",
+    "eyeColor": "Plave (Blue)",
+    "scarsAndMarks": "Opekotina 2. stupnja na lijevoj ruci (Second-degree burn on left hand)",
+    "buildNotes": "Exceptionally tall"
+  },
+  "background": {
+    "sections": [
+      {
+        "title": "Secret Heritage",
+        "content": [
+          "Son of Aleksandar Vuk (closely guarded secret)",
+          "Uses mother's maiden name (Zekovich) to hide connection",
+          "Mother's family: old money with ties to Partija",
+          "Even Titovsky (Vuk's former right-hand man) doesn't know",
+          "Wolf is his family line symbol (inherited from Vuk)"
+        ]
+      },
+      {
+        "title": "Rise in Police",
+        "content": [
+          "Graduated Magna Cum Laude from Police Academy",
+          "Youngest detective to make rank",
+          "Rising star with stellar reputation",
+          "Uses his position to access evidence, manipulate records, cover tracks"
+        ]
+      },
+      {
+        "title": "Resources",
+        "content": [
+          "Inherited Vuk's hidden assets and some loyalist connections",
+          "Mother's old money family provides additional resources",
+          "Police salary and access",
+          "Can hire muscle and coordinate operations"
+        ]
+      }
+    ]
+  },
+  "personality": {
+    "coreTraits": [
+      "Brilliant and calculating",
+      "Driven by dual motives: revenge and ambition",
+      "Charismatic enough to be a 'rising star'",
+      "Willing to betray anyone, including his own people",
+      "Cold pragmatism masks deep emotional wounds"
+    ],
+    "motivations": [
+      "Avenge his father's death (suspects Sek killed Vuk)",
+      "Take over Titovsky's criminal empire",
+      "Prove himself worthy of Vuk's legacy (while hiding it)",
+      "Punish those who destroyed his father's regime"
+    ],
+    "internalConflicts": [
+      "Cannot publicly claim his father's legacy",
+      "Using Young Conquerors (half his people) as tools",
+      "Torn between revenge and ambition",
+      "The burn scar may symbolize early trauma"
+    ]
+  },
+  "relationships": [
+    {
+      "character": "Aleksandar Vuk",
+      "relationship": "Father (deceased)",
+      "details": [
+        "Never publicly acknowledged",
+        "Vuk hid his son to protect him",
+        "Zekovich carries the weight of this legacy",
+        "Driven to avenge and succeed where father failed"
+      ]
+    },
+    {
+      "character": "Titovsky",
+      "relationship": "Secret enemy",
+      "details": [
+        "Works within his smuggling network",
+        "Titovsky doesn't know Zekovich is Vuk's son",
+        "Secretly planning to eliminate Titovsky and take over",
+        "Uses Titovsky's resources while undermining him"
+      ]
+    },
+    {
+      "character": "Hal Cyon & Young Conquerors",
+      "relationship": "Exploiter",
+      "details": [
+        "Recruited them into smuggling network (for Titovsky)",
+        "Killed Hal to cover his tracks and frame others",
+        "Weaponizing 'Sek's kids' against him"
+      ]
+    },
+    {
+      "character": "Rydeovich",
+      "relationship": "Framed target",
+      "details": [
+        "Recognized as a threat to the operation",
+        "Framed with forged reports (using stolen signature)",
+        "Tried to kill him in the ambush"
+      ]
+    },
+    {
+      "character": "Sek Yurity",
+      "relationship": "Unknown enemy/distant cousin",
+      "details": [
+        "Suspects Sek killed his father",
+        "Doesn't know they're distant cousins",
+        "Says 'wolf phrase' on radio (unconsciously revealing connection)",
+        "Will be killed by Sek in final confrontation"
+      ]
+    }
+  ],
+  "roleInStory": {
+    "sections": [
+      {
+        "title": "The Hidden Threat",
+        "content": [
+          "Appears to be a promising young detective",
+          "Actually orchestrating the entire conspiracy",
+          "Operating from inside the system",
+          "Using his badge as cover"
+        ]
+      },
+      {
+        "title": "The Ambush (Before Story Begins)",
+        "content": [
+          "Planned to ambush Titovsky and Hal at their meeting",
+          "Kill Titovsky, eliminate Hal, seize the Red Death shipment",
+          "Rydeovich unexpectedly present - tried to kill him too",
+          "Partial success: Hal dead, Titovsky and Rydeovich wounded, shipment seized"
+        ]
+      },
+      {
+        "title": "The Takeover Plan",
+        "content": [
+          "Uses detective authority to push gangs out of Esseg",
+          "Raids, pressure, warnings about 'crackdown'",
+          "Clears the board for his own operation",
+          "Arranges deal with gangs outside Esseg on his terms",
+          "Will become the new supplier, cutting Titovsky out entirely"
+        ]
+      },
+      {
+        "title": "The Frame Job",
+        "content": [
+          "Forged reports to frame Rydeovich",
+          "Used stolen signature, own handwriting for content",
+          "Buried the reports to make it look like Rydeovich was covering up",
+          "Nearly works until Sek/Veckurius cross-reference handwriting"
+        ]
+      },
+      {
+        "title": "The Revelation",
+        "content": [
+          "His use of the 'wolf phrase' on police radio alerts Sek",
+          "Sek recognizes the words Vuk spoke while dying",
+          "Investigation reveals Zekovich is Vuk's son",
+          "Truth comes out in Chapter 5"
+        ]
+      }
+    ]
+  },
+  "characterArc": {
+    "before": "Brilliant young detective hiding dark agenda",
+    "after": "Exposed as Vuk's son seeking revenge and power, then killed"
+  },
+  "skillsAndAbilities": [
+    "Exceptional investigative skills",
+    "Manipulation and deception",
+    "Tactical planning and execution",
+    "Police procedure and evidence handling",
+    "Access to resources through family wealth"
+  ],
+  "notableMoments": [
+    {
+      "timing": "Before Story",
+      "description": "Executes the ambush, kills Hal, seizes Red Death shipment"
+    },
+    {
+      "timing": "Before Story",
+      "description": "Uses badge to push gangs out of Esseg (setting up his own deal)"
+    },
+    {
+      "timing": "Chapter 1",
+      "description": "Voice on police radio says the 'wolf phrase'"
+    },
+    {
+      "timing": "Chapter 3",
+      "description": "Handwriting on forged reports identified as his"
+    },
+    {
+      "timing": "Chapter 3",
+      "description": "Discovery that gangs have left Esseg (his doing)"
+    },
+    {
+      "timing": "Chapter 4",
+      "description": "Orchestrates hospital attack (through hired gangs)"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Identity as Vuk's son revealed"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Plan exposed - making deal tonight with gangs at location outside Esseg"
+    },
+    {
+      "timing": "Chapter 6",
+      "description": "Killed by Sek during special forces operation"
+    }
+  ],
+  "remarksAndAwards": [
+    {
+      "original": "Magna Laude, Policijska Akademija",
+      "translation": "Magna Cum Laude, Police Academy"
+    }
+  ],
+  "storySignificance": [
+    "Primary antagonist",
+    "Embodies the sins of the previous generation",
+    "His exploitation of Young Conquerors parallels larger themes",
+    "Represents how past traumas perpetuate violence",
+    "His death closes the Vuk chapter (until Book 3's revelations)"
+  ],
+  "thematicRole": [
+    {
+      "theme": "Generational trauma",
+      "description": "Cannot escape his father's shadow"
+    },
+    {
+      "theme": "Betrayal",
+      "description": "Uses 'his people' (Young Conquerors) as tools"
+    },
+    {
+      "theme": "Hidden identity",
+      "description": "Must hide his true self to operate"
+    },
+    {
+      "theme": "Revenge vs. Justice",
+      "description": "Sek becomes what Zekovich accuses him of being"
+    }
+  ],
+  "additionalNotes": {
+    "characterFunction": [
+      "Strength: Operates from inside the system with legitimate authority",
+      "Weakness: Cannot reveal his true identity or motives",
+      "Irony: Killed by the man he sought to destroy (his distant cousin)",
+      "Tragedy: Had potential to be great, corrupted by inheritance"
+    ]
+  },
+  "seriesSetup": {
+    "futureBooks": [
+      "His death resolves the immediate threat",
+      "Vuk's legacy and bloodline technology remain relevant",
+      "The bunker and its secrets may appear in future books"
+    ]
+  }
+}

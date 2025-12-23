@@ -1,0 +1,185 @@
+{
+  "characterId": "sek_yurity",
+  "basicInfo": {
+    "fullName": "Sek Yurity",
+    "aliases": ["[REDACTED]"],
+    "association": "Regionalna Policija Esseg (Regional Police)",
+    "rank": "Detective",
+    "dateOfBirth": "[REDACTED]",
+    "placeOfBirth": "[REDACTED]",
+    "ethnicity": "Iron Army (Conqueror)",
+    "status": "alive"
+  },
+  "physicalDescription": {
+    "height": "180 cm",
+    "weight": "95 kg",
+    "hairColor": "Tamnosmeda (Dark brown)",
+    "eyeColor": "Smeđe (Brown)",
+    "scarsAndMarks": "[REDACTED]"
+  },
+  "background": {
+    "sections": [
+      {
+        "title": "Military History",
+        "content": [
+          "Former Captain of Special Operations, Iron Army",
+          "Led elite forces during the invasion of Esseg",
+          "Personally killed Aleksandar Vuk (closely guarded secret)",
+          "Signatory of the Accords after the war",
+          "Commands respect among Iron Army veterans"
+        ]
+      },
+      {
+        "title": "Secret Identity",
+        "content": [
+          "Distant cousin of Aleksandar Vuk (unknown to everyone)",
+          "Wolf is his family line symbol (same as Vuk's)",
+          "Has access to Vuk's bloodline-based technology (bunker)",
+          "This connection will be explored in future books"
+        ]
+      },
+      {
+        "title": "Post-War Life",
+        "content": [
+          "Chose to become police detective to serve his people",
+          "Considers himself godfather/uncle to all Young Conquerors",
+          "Feels oath-bound by the Accords to protect Iron Army remnants",
+          "Lives with the moral weight of his wartime actions"
+        ]
+      }
+    ]
+  },
+  "personality": {
+    "coreTraits": [
+      "Duty-focused and responsibility-driven",
+      "Protective of Iron Army community, especially younger generation",
+      "Haunted by his role in the war",
+      "Pragmatic - willing to break rules for the greater good",
+      "Reserved about his past"
+    ],
+    "motivations": [
+      "Protecting Iron Army remnants in Esseg",
+      "Honoring the Accords he signed",
+      "Ensuring Young Conquerors have a future",
+      "Maintaining order between Conquerors and Natives"
+    ],
+    "internalConflicts": [
+      "Struggles between following the law vs. delivering justice",
+      "Tension between his role as protector and his past as executioner",
+      "Questions whether his duty is to 'his people' or to everyone"
+    ]
+  },
+  "relationships": [
+    {
+      "character": "Veckurius Cezar",
+      "relationship": "Detective partner and friend",
+      "details": [
+        "Detective partner since after the war",
+        "Became friends during rebuilding efforts",
+        "Share whiskey ritual at end of difficult days",
+        "Deep trust, but tested by the case",
+        "Veckurius represents integration; Sek represents Iron Army interests"
+      ]
+    },
+    {
+      "character": "Young Conquerors",
+      "relationship": "Protective godfather figure",
+      "details": [
+        "Views them as his responsibility",
+        "Knows their parents, checks on their wellbeing",
+        "Their exploitation by Titovsky is deeply personal",
+        "Hal Cyon's death particularly affects him"
+      ]
+    },
+    {
+      "character": "The Oracle (Vračara)",
+      "relationship": "Spiritual guide",
+      "details": [
+        "Seeks her guidance during crisis",
+        "Respects her role as spiritual leader",
+        "Undergoes trial by ordeal under her guidance"
+      ]
+    }
+  ],
+  "roleInStory": {
+    "sections": [
+      {
+        "title": "Act I - Duty",
+        "content": [
+          "Investigates Hal Cyon's murder",
+          "Initially believes it's tragic accident involving Young Conquerors",
+          "Partners with Veckurius to uncover the truth"
+        ]
+      },
+      {
+        "title": "Act II - Conflict",
+        "content": [
+          "Discovers Young Conquerors being used by Titovsky",
+          "Feels personally responsible for their exploitation",
+          "Conflicts with Veckurius over loyalties and methods"
+        ]
+      },
+      {
+        "title": "Act III - Resolution",
+        "content": [
+          "Undergoes trial by ordeal with the Oracle",
+          "Accepts he must break the rules to protect his people",
+          "Reactivates his old special forces team",
+          "Conducts extrajudicial operation to destroy Red Death shipment and gangs",
+          "Gets blood on his hands again"
+        ]
+      }
+    ]
+  },
+  "characterArc": {
+    "before": "Believes he can protect his people by working within the system, following the Accords",
+    "after": "Accepts that sometimes protection requires moral compromise; becomes both protector and executioner again"
+  },
+  "skillsAndAbilities": [
+    "Military intelligence training",
+    "Special operations expertise",
+    "Detective investigation skills",
+    "Leadership and tactical planning",
+    "Access to elite special forces operatives"
+  ],
+  "notableMoments": [
+    {
+      "timing": "Chapter 1",
+      "description": "Recognizes Hal Cyon's body, is saddened"
+    },
+    {
+      "timing": "Chapter 4",
+      "description": "Undergoes drug-induced vision quest with the Oracle"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Makes connection between 'wolf phrase' on radio and Zekovich"
+    },
+    {
+      "timing": "Chapter 6",
+      "description": "Leads special forces operation"
+    }
+  ],
+  "remarksAndAwards": [
+    {
+      "original": "[REDACTED - 3 lines]",
+      "translation": "[REDACTED - 3 lines]"
+    }
+  ],
+  "storySignificance": [
+    "Primary protagonist and POV character",
+    "Embodies themes of duty, moral compromise, and coexistence",
+    "His secret connection to Vuk sets up series-long mystery",
+    "His decision to break the rules drives the resolution",
+    "His relationship with Veckurius explores Native/Conqueror tensions"
+  ],
+  "seriesSetup": {
+    "nextBook": [
+      "Faces consequences of his extrajudicial actions",
+      "Confronts Titovsky directly"
+    ],
+    "futureBooks": [
+      "Will be revealed to have split personality - becomes serial killer"
+    ]
+  }
+}

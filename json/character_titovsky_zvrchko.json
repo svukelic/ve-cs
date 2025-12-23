@@ -1,0 +1,244 @@
+{
+  "characterId": "titovsky_zvrchko",
+  "basicInfo": {
+    "fullName": "Titovsky Zvrchko",
+    "aliases": ["Marshal"],
+    "association": "Partija (Criminal Organization)",
+    "dateOfBirth": "N/A",
+    "placeOfBirth": "Esseg",
+    "ethnicity": "Native",
+    "status": "alive"
+  },
+  "physicalDescription": {
+    "height": "180 cm",
+    "weight": "65 kg",
+    "hairColor": "Smeda (Brown)",
+    "eyeColor": "Smeđe (Brown)",
+    "scarsAndMarks": "N/A",
+    "buildNotes": "Lean build"
+  },
+  "background": {
+    "sections": [
+      {
+        "title": "Under Vuk's Regime",
+        "content": [
+          "Former right-hand man to Aleksandar Vuk",
+          "High-ranking member of original Partija (political party)",
+          "Survived the fall of Vuk's regime",
+          "Transitioned from political power to criminal power"
+        ]
+      },
+      {
+        "title": "Criminal Empire",
+        "content": [
+          "Head of 'Partija' (now a criminal organization, not political)",
+          "Built drug smuggling network using Young Conquerors",
+          "Red Death drug trade operation",
+          "35 failed prosecution attempts (untouchable through corruption)"
+        ]
+      },
+      {
+        "title": "Current Position",
+        "content": [
+          "Most powerful crime boss in Esseg",
+          "Uses corruption to avoid consequences",
+          "Judge Muliera works for him",
+          "Has police officers on payroll"
+        ]
+      }
+    ]
+  },
+  "personality": {
+    "coreTraits": [
+      "Survivor and pragmatist",
+      "Politically savvy",
+      "Ruthless but calculating",
+      "Maintains veneer of respectability"
+    ],
+    "motivations": [
+      "Maintaining and expanding criminal empire",
+      "Staying one step ahead of law enforcement",
+      "Consolidating power after chaos"
+    ]
+  },
+  "relationships": [
+    {
+      "character": "Aleksandar Vuk",
+      "relationship": "Former leader",
+      "details": [
+        "Was his right-hand man during the regime",
+        "Does not know Vuk had a son",
+        "Survived Vuk's fall and adapted"
+      ]
+    },
+    {
+      "character": "Zekovich",
+      "relationship": "Unknowing victim",
+      "details": [
+        "Thinks Zekovich is just another corrupt cop working for him",
+        "Does not know Zekovich is Vuk's son",
+        "Doesn't realize Zekovich is trying to kill him and take over"
+      ]
+    },
+    {
+      "character": "Judge Muliera",
+      "relationship": "Corrupt asset",
+      "details": [
+        "Corrupt judge on his payroll",
+        "Uses her to obstruct investigations",
+        "She tries to shut down Sek/Veckurius investigation"
+      ]
+    },
+    {
+      "character": "Young Conquerors Network",
+      "relationship": "Exploiter",
+      "details": [
+        "Exploits Young Conquerors as smugglers for Red Death",
+        "Uses their vulnerable position in society",
+        "Hal Cyon and Peni Tenz work for him",
+        "This network is his current power base"
+      ]
+    },
+    {
+      "character": "Hal Cyon",
+      "relationship": "Associate (deceased)",
+      "details": [
+        "Met with Hal to arrange Red Death shipment transport",
+        "Ambushed by Zekovich during this meeting",
+        "Hal killed, Titovsky wounded"
+      ]
+    }
+  ],
+  "roleInStory": {
+    "sections": [
+      {
+        "title": "The Hidden Hand",
+        "content": [
+          "Initially appears only as name/reputation",
+          "Wounded and in hospital (Chapter 2)",
+          "Judge Muliera tries to keep detectives away from him",
+          "His network is what everyone is investigating"
+        ]
+      },
+      {
+        "title": "The Victim",
+        "content": [
+          "Targeted by Zekovich (doesn't know why initially)",
+          "Wounded in the ambush, loses control of Red Death shipment",
+          "Recovers during the story"
+        ]
+      },
+      {
+        "title": "The Revelation & Manipulation",
+        "content": [
+          "Chapter 5: Confronted with proof of Zekovich's betrayal",
+          "Chapter 5: Realizes Zekovich is Vuk's son and tried to kill him",
+          "Chapter 5: Provides tactical intelligence - three possible deal locations, his best assessment",
+          "Chapter 5: Gives Sek/Veckurius the location but refuses to testify officially",
+          "Chapter 5: 'This conversation never happened. But if you want to stop him, that's where he'll be.'",
+          "Chapter 5: Secretly instructs Judge Muliera to block official police action",
+          "Master manipulation: Gets revenge on Zekovich while keeping his hands clean"
+        ]
+      },
+      {
+        "title": "The Survivor",
+        "content": [
+          "Survives the story",
+          "Red Death shipment destroyed (but he gets revenge)",
+          "Smuggling network disrupted temporarily",
+          "Rival gangs eliminated by Sek's special forces operation",
+          "Returns to Esseg as unopposed crime lord",
+          "Never officially cooperated with police (can't be used against him)"
+        ]
+      }
+    ]
+  },
+  "skillsAndAbilities": [
+    "Political manipulation",
+    "Criminal organization management",
+    "Corruption and bribery networks",
+    "Survival instincts"
+  ],
+  "notableMoments": [
+    {
+      "timing": "Before Story",
+      "description": "Ambushed during meeting with Hal, Red Death shipment stolen"
+    },
+    {
+      "timing": "Chapter 2",
+      "description": "In hospital, Sek/Veckurius try to reach him"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Shown proof of Zekovich's betrayal by Sek/Veckurius"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Provides tactical intelligence about deal locations"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Refuses to testify officially: 'This conversation never happened'"
+    },
+    {
+      "timing": "Chapter 5",
+      "description": "Secretly orders Judge Muliera to block official police action"
+    },
+    {
+      "timing": "Chapter 6",
+      "description": "Gets revenge on Zekovich without official involvement"
+    },
+    {
+      "timing": "Chapter 6",
+      "description": "Consolidates power as sole remaining criminal force"
+    }
+  ],
+  "remarksAndAwards": [
+    {
+      "original": "Navodna glava 'Partije'",
+      "translation": "Alleged head of 'The Party'"
+    },
+    {
+      "original": "35 neuspjesnih pokusaja kaznenog gonjenja",
+      "translation": "35 failed prosecution attempts"
+    }
+  ],
+  "storySignificance": [
+    "Represents the corruption that enables crime",
+    "His exploitation of Young Conquerors drives Sek's decision",
+    "Survives to be the main antagonist in Book 2",
+    "Embodies how old regime's rot continues"
+  ],
+  "thematicRole": [
+    {
+      "theme": "Adaptation",
+      "description": "Vuk's ideology becomes criminal enterprise"
+    },
+    {
+      "theme": "Exploitation",
+      "description": "Uses vulnerable Young Conquerors"
+    },
+    {
+      "theme": "Untouchable",
+      "description": "System can't stop him through legal means"
+    },
+    {
+      "theme": "Continuity",
+      "description": "Old regime's corruption lives on"
+    }
+  ],
+  "seriesSetup": {
+    "nextBook": [
+      "Now unopposed crime lord in Esseg",
+      "Direct confrontation with Sek and Veckurius",
+      "Knows about Zekovich being Vuk's son (information advantage)",
+      "May know about black market technology connections",
+      "The special forces operation gave him enemies (survivors, families)"
+    ],
+    "antagonistEvolution": {
+      "book1": "Background threat, wounded victim, survivor",
+      "book2": "Primary antagonist with consolidated power",
+      "future": "Potential connection to black marketeer storyline"
+    }
+  }
+}

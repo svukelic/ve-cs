@@ -1,0 +1,206 @@
+{
+  "characterId": "veckurius_cezar",
+  "basicInfo": {
+    "fullName": "Veckurius Cezar",
+    "aliases": ["Vecko"],
+    "association": "Regionalna Policija Esseg (Regional Police)",
+    "rank": "Detective",
+    "dateOfBirth": "23/10/1937",
+    "placeOfBirth": "Esseg",
+    "ethnicity": "Native (Domorodac)",
+    "status": "alive"
+  },
+  "physicalDescription": {
+    "height": "182 cm",
+    "weight": "107 kg",
+    "hairColor": "Crna (Black)",
+    "eyeColor": "Smeđe (Brown)",
+    "scarsAndMarks": "None noted"
+  },
+  "background": {
+    "sections": [
+      {
+        "title": "War Experience",
+        "content": [
+          "Served during the war",
+          "Awarded Petrov Order for merit during wartime",
+          "Experienced the Iron Army invasion firsthand",
+          "Lived through Vuk's regime and its fall"
+        ]
+      },
+      {
+        "title": "Post-War Life",
+        "content": [
+          "Became detective in Regional Police during rebuilding",
+          "Partnered with Sek Yurity after the war",
+          "Represents the Native perspective in law enforcement",
+          "Embodies the possibility of integration and coexistence"
+        ]
+      }
+    ]
+  },
+  "personality": {
+    "coreTraits": [
+      "Passionate and volatile",
+      "Believes in working within the system",
+      "Strong sense of justice and fairness",
+      "More impulsive than Sek",
+      "Loyal but questions when loyalty conflicts with principle"
+    ],
+    "motivations": [
+      "Proving the system can work for everyone",
+      "Maintaining law and order through legitimate means",
+      "Protecting both Natives and Conquerors equally",
+      "Upholding the integration promised by the Accords"
+    ],
+    "internalConflicts": [
+      "Tension between following rules and delivering justice",
+      "Frustration when the system fails (corrupt judges, framed colleagues)",
+      "Questions whether Sek truly serves everyone or just 'his people'"
+    ]
+  },
+  "relationships": [
+    {
+      "character": "Sek Yurity",
+      "relationship": "Detective partner and friend",
+      "details": [
+        "Detective partner and friend since after the war",
+        "Share whiskey ritual - moment of bonding across their differences",
+        "Deep mutual respect but fundamental disagreements",
+        "Veckurius challenges Sek to be better",
+        "Their partnership represents Native/Conqueror coexistence"
+      ]
+    },
+    {
+      "character": "Peni Tenz",
+      "relationship": "Defender",
+      "details": [
+        "Defends her from slurs at the police station",
+        "Represents his belief in protecting everyone, not just his own"
+      ]
+    },
+    {
+      "character": "The System",
+      "relationship": "Complicated",
+      "details": [
+        "Initially believes in it",
+        "Becomes disillusioned when Judge Muliera obstructs justice",
+        "Forced to compromise his principles by enabling Sek's operation"
+      ]
+    }
+  ],
+  "roleInStory": {
+    "sections": [
+      {
+        "title": "Act I - Belief in the System",
+        "content": [
+          "Investigates alongside Sek professionally",
+          "Follows proper procedures",
+          "Defends Peni Tenz from discrimination",
+          "Represents 'doing it the right way'"
+        ]
+      },
+      {
+        "title": "Act II - Frustration and Breaking",
+        "content": [
+          "Realizes Rydeovich is being framed by corrupt system",
+          "Clashes with Judge Muliera",
+          "Conducts unauthorized gang raids out of frustration",
+          "Doesn't yet know Zekovich is behind everything"
+        ]
+      },
+      {
+        "title": "Act III - Moral Compromise",
+        "content": [
+          "Confronts Sek about only protecting Conquerors",
+          "Forces Sek to articulate his choice",
+          "Must decide: report Sek's special forces operation or enable it",
+          "Chooses to enable it - crosses the line himself",
+          "Carries the guilt of compromise"
+        ]
+      }
+    ]
+  },
+  "characterArc": {
+    "before": "Believes the system can deliver justice if good people work within it",
+    "after": "Understands sometimes the law isn't enough; shares Sek's moral burden"
+  },
+  "skillsAndAbilities": [
+    "Experienced detective",
+    "Combat capabilities (wartime veteran)",
+    "Passionate advocate and interrogator",
+    "Willing to take physical risks"
+  ],
+  "notableMoments": [
+    {
+      "timing": "Chapter 2",
+      "description": "Defends Peni Tenz from slurs, establishes his principles"
+    },
+    {
+      "timing": "Chapter 2",
+      "description": "Shares whiskey with Sek at motel (bonding ritual)"
+    },
+    {
+      "timing": "Chapter 4",
+      "description": "Conducts unauthorized gang raids"
+    },
+    {
+      "timing": "Chapter 4",
+      "description": "Confronts Sek about loyalties - 'You only protect your people'"
+    },
+    {
+      "timing": "Chapter 6",
+      "description": "Enables the special forces operation, becomes complicit"
+    }
+  ],
+  "remarksAndAwards": [
+    {
+      "original": "Petrov Orden za zasluge za vrijeme rata",
+      "translation": "Petrov Order for merit during wartime"
+    },
+    {
+      "original": "Ukor za primjenu prekomjerne sile",
+      "translation": "Reprimand for use of excessive force"
+    },
+    {
+      "original": "Ukor za nepropisno postupanje s dokazima",
+      "translation": "Reprimand for improper handling of evidence"
+    },
+    {
+      "original": "Ukor za nanosenje teskih tjelesnih ozljeda suradniku",
+      "translation": "Reprimand for causing serious bodily injury to colleague"
+    }
+  ],
+  "storySignificance": [
+    "Secondary protagonist and POV character",
+    "Represents Native perspective and voice of integration",
+    "His arc mirrors Sek's - both compromise their principles",
+    "Embodies the tension between law and justice",
+    "The whiskey ritual symbolizes their bond despite differences"
+  ],
+  "thematicRole": [
+    {
+      "theme": "Voice of legitimacy",
+      "description": "Challenges Sek to work within the system"
+    },
+    {
+      "theme": "Moral counterpoint",
+      "description": "Questions Sek's tribal loyalties"
+    },
+    {
+      "theme": "Tragic compromise",
+      "description": "His corruption mirrors Sek's fall"
+    },
+    {
+      "theme": "Unity symbol",
+      "description": "Their partnership represents coexistence working"
+    }
+  ],
+  "seriesSetup": {
+    "nextBook": [
+      "Shares the secret of the special forces operation with Sek",
+      "Their partnership is now based on mutual compromise and guilt",
+      "The whiskey ritual takes on new meaning - two men who crossed lines they can't uncross"
+    ]
+  }
+}

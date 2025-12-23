@@ -1,0 +1,389 @@
+{
+  "supportingCast": [
+    {
+      "characterId": "probehovsky_bobertus",
+      "basicInfo": {
+        "fullName": "Probehovsky Bobertus",
+        "aliases": ["Doktor Smrt (Doctor Death)"],
+        "association": "Regionalna Policija Esseg (Regional Police)",
+        "rank": "Medical Examiner",
+        "dateOfBirth": "26/12/1939",
+        "placeOfBirth": "Esseg",
+        "status": "alive"
+      },
+      "physicalDescription": {
+        "height": "184 cm",
+        "weight": "83 kg",
+        "hairColor": "Svijetlosmeda (Light brown)",
+        "eyeColor": "Zelene (Green)",
+        "scarsAndMarks": "None noted"
+      },
+      "personality": {
+        "coreTraits": [
+          "Clinical and professional",
+          "Gallows humor (hence the nickname)",
+          "Competent at his job despite personal issues"
+        ]
+      },
+      "roleInStory": {
+        "sections": [
+          {
+            "title": "Medical Examiner",
+            "content": [
+              "Medical examiner who processes Hal Cyon's body",
+              "Provides forensic evidence for the investigation",
+              "Professional consultant to Sek and Veckurius",
+              "Likely examines other victims as plot progresses"
+            ]
+          }
+        ]
+      },
+      "remarksAndAwards": [
+        {
+          "original": "Nagrada Mrtvozorskog Ureda za radne zasluge",
+          "translation": "Medical Examiner's Office Award for work merit"
+        },
+        {
+          "original": "Opomena za uznemiravanje na radnom mjestu",
+          "translation": "Warning for workplace harassment"
+        }
+      ],
+      "additionalNotes": {
+        "storyFunction": [
+          "Provides forensic information about deaths",
+          "Establishes cause of death for Hal Cyon",
+          "May provide crucial clue about Zekovich's attack method",
+          "Supporting character who keeps investigation grounded in evidence"
+        ]
+      }
+    },
+    {
+      "characterId": "kosach_dushan",
+      "basicInfo": {
+        "fullName": "Kosach Dushan",
+        "aliases": ["Narednik (Sergeant)"],
+        "association": "Gradska Policija Esseg (City Police - different from Regional)",
+        "dateOfBirth": "30/01/1945",
+        "placeOfBirth": "Esseg",
+        "status": "alive"
+      },
+      "physicalDescription": {
+        "height": "178 cm",
+        "weight": "97 kg",
+        "hairColor": "None noted (possibly bald?)",
+        "eyeColor": "Smeđe (Brown)",
+        "scarsAndMarks": "30% tijela pokriveno oziljcima (30% of body covered in scars)"
+      },
+      "background": {
+        "sections": [
+          {
+            "title": "Background",
+            "content": [
+              "Extensive scarring suggests traumatic past (war? accident? violence?)",
+              "City Police, not Regional (different jurisdiction/politics)",
+              "Athletic - won Silver Medal at Esseg Police Games"
+            ]
+          }
+        ]
+      },
+      "roleInStory": {
+        "sections": [
+          {
+            "title": "Status: Currently undefined",
+            "content": [
+              "May represent City Police perspective",
+              "Could be ally or complication for Sek/Veckurius",
+              "Scars suggest potential backstory connection to war or violence"
+            ]
+          }
+        ]
+      },
+      "remarksAndAwards": [
+        {
+          "original": "Srebrna Medalja na Policijskim Igrama Essega",
+          "translation": "Silver Medal at Esseg Police Games"
+        }
+      ],
+      "additionalNotes": {
+        "storyFunction": [
+          "Character exists in original cast but role in plot TBD",
+          "Extensive scarring is notable - may be relevant to his character",
+          "City vs. Regional Police distinction may create jurisdictional issues"
+        ]
+      }
+    },
+    {
+      "characterId": "judge_muliera_karolinsky",
+      "basicInfo": {
+        "fullName": "Muliera Karolinsky",
+        "title": "Judge",
+        "association": "Esseg Judicial System",
+        "status": "alive"
+      },
+      "personality": {
+        "coreTraits": [
+          "Abuses judicial authority",
+          "Protects criminal interests",
+          "Represents systemic corruption",
+          "Skilled at appearing legitimate while serving Titovsky"
+        ]
+      },
+      "relationships": [
+        {
+          "character": "Titovsky",
+          "relationship": "Corrupt asset",
+          "details": [
+            "Corrupt judge on Titovsky's payroll",
+            "Actively obstructs Sek/Veckurius investigation",
+            "Tries to keep them away from hospital (protecting Titovsky)",
+            "Orders Rydeovich's arrest when he wakes from coma"
+          ]
+        }
+      ],
+      "roleInStory": {
+        "sections": [
+          {
+            "title": "Corrupt Judge",
+            "content": [
+              "Corrupt judge on Titovsky's payroll",
+              "Actively obstructs Sek/Veckurius investigation",
+              "Tries to keep them away from hospital (protecting Titovsky)",
+              "Orders Rydeovich's arrest when he wakes from coma",
+              "Creates conflict in Chapter 4",
+              "Chapter 5: Blocks warrant/authorization for raid on Zekovich",
+              "Chapter 5: Receives secret instructions from Titovsky to block official action",
+              "Her obstruction is both legally defensible and corruptly motivated"
+            ]
+          }
+        ]
+      },
+      "notableMoments": [
+        {
+          "timing": "Chapter 2",
+          "description": "Identified as obstacle to investigation"
+        },
+        {
+          "timing": "Chapter 4",
+          "description": "Direct conflict with Sek/Veckurius"
+        },
+        {
+          "timing": "Chapter 5",
+          "description": "Orders Rydeovich arrested despite evidence"
+        },
+        {
+          "timing": "Chapter 5",
+          "description": "Blocks warrant for raid: 'You want to raid based on a crime lord's word? Bring me real evidence.'"
+        },
+        {
+          "timing": "Chapter 5",
+          "description": "(Unknown to Sek/Veckurius) Following Titovsky's orders to keep it off-books"
+        }
+      ],
+      "storySignificance": [
+        "Embodies how Titovsky corrupts the system",
+        "Forces Sek to work around legitimate authority",
+        "Her corruption justifies Sek's extrajudicial resolution",
+        "Her obstruction is part of Titovsky's manipulation - he wants it handled illegally"
+      ]
+    },
+    {
+      "characterId": "hal_cyon",
+      "basicInfo": {
+        "fullName": "Hal Cyon",
+        "ethnicity": "Young Conqueror (Iron Army generation)",
+        "status": "deceased"
+      },
+      "background": {
+        "sections": [
+          {
+            "title": "Background",
+            "content": [
+              "Part of Young Conquerors generation",
+              "Sek knows him personally (one of 'his kids')",
+              "Working in Titovsky's smuggling network",
+              "Related to Peni Tenz"
+            ]
+          }
+        ]
+      },
+      "roleInStory": {
+        "sections": [
+          {
+            "title": "The Victim",
+            "content": [
+              "The victim whose murder starts the investigation",
+              "Meeting with Titovsky to arrange Red Death transport",
+              "Killed by Zekovich during ambush",
+              "Body found at motel in Pozhegg (Chapter 1)"
+            ]
+          }
+        ]
+      },
+      "notableMoments": [
+        {
+          "timing": "Before Story",
+          "description": "Working as smuggler for Titovsky"
+        },
+        {
+          "timing": "Before Story",
+          "description": "Killed by Zekovich at meeting"
+        },
+        {
+          "timing": "Chapter 1",
+          "description": "Body discovered and identified"
+        },
+        {
+          "timing": "Chapter 5",
+          "description": "Rydeovich reveals Hal was working with Peni"
+        }
+      ],
+      "storySignificance": [
+        "His death is personal for Sek (failed to protect him)",
+        "Initially seems like wrong-place-wrong-time",
+        "Later revealed to be active in smuggling network",
+        "Represents exploitation of Young Conquerors"
+      ]
+    },
+    {
+      "characterId": "peni_tenz",
+      "basicInfo": {
+        "fullName": "Peni Tenz",
+        "ethnicity": "Young Conqueror (Iron Army generation)",
+        "status": "alive"
+      },
+      "background": {
+        "sections": [
+          {
+            "title": "Background",
+            "content": [
+              "Young Conqueror generation",
+              "Related to Hal Cyon (likely sister)",
+              "Working with Hal in Titovsky's smuggling network",
+              "Part of the Young Conquerors being exploited"
+            ]
+          }
+        ]
+      },
+      "roleInStory": {
+        "sections": [
+          {
+            "title": "Key Witness",
+            "content": [
+              "Chapter 2: Comes to police station to collect Hal's body",
+              "Chapter 2: Subjected to slurs by Native officers",
+              "Chapter 2: Veckurius defends her (establishes his principles)",
+              "Chapter 5: Named by Rydeovich as part of smuggling network",
+              "Chapter 5: Confronted by Sek/Veckurius, breaks under pressure",
+              "Chapter 5: Reveals she was supposed to help with transport 'tonight at [general area]'",
+              "Chapter 5: Doesn't know exact location (Zekovich compartmentalized info)",
+              "Chapter 5: Her information is the breakthrough that starts the final sequence",
+              "Investigation of her leads to broader Young Conquerors network discovery"
+            ]
+          }
+        ]
+      },
+      "storySignificance": [
+        "Her treatment at police station shows Native/Conqueror tensions",
+        "Veckurius defending her establishes his character",
+        "Her involvement in smuggling devastating to Sek",
+        "Provides crucial intelligence about the deal's timing and general location",
+        "Leads to discovery of full Young Conquerors network",
+        "Her breaking point is emotional - brother dead, caught in conspiracy"
+      ],
+      "thematicRole": [
+        {
+          "theme": "Exploitation",
+          "description": "Represents Young Conquerors caught between worlds"
+        },
+        {
+          "theme": "Vulnerability",
+          "description": "Shows how they're exploited by people like Titovsky and Zekovich"
+        },
+        {
+          "theme": "Dual victimization",
+          "description": "Her victimization (slurs) and criminality (smuggling) both stem from vulnerable position"
+        },
+        {
+          "theme": "Redemption",
+          "description": "Her cooperation (under pressure) helps save other Young Conquerors"
+        }
+      ]
+    },
+    {
+      "characterId": "the_oracle",
+      "basicInfo": {
+        "fullName": "Vračara (Oracle/Fortune Teller/Witch)",
+        "title": "Vračara",
+        "association": "Iron Army spiritual leader",
+        "status": "alive"
+      },
+      "background": {
+        "sections": [
+          {
+            "title": "Background",
+            "content": [
+              "Came with Iron Army during invasion of Esseg",
+              "Spiritual leader for Conqueror community",
+              "Respected within Iron Army culture",
+              "Conducts trials by ordeal and spiritual rituals",
+              "Similar to military chaplain"
+            ]
+          }
+        ]
+      },
+      "personality": {
+        "coreTraits": [
+          "Wise and perceptive",
+          "Commands respect without demanding it",
+          "Understands the burden of leadership and duty",
+          "Non-judgmental - helps people find their own truth"
+        ]
+      },
+      "roleInStory": {
+        "sections": [
+          {
+            "title": "Spiritual Guide",
+            "content": [
+              "Chapter 4: Sek visits her seeking guidance",
+              "Chapter 4: Conducts trial by ordeal (drug-induced vision quest)",
+              "Helps Sek accept he must break the rules",
+              "Provides spiritual/psychological clarity for his decision"
+            ]
+          }
+        ]
+      },
+      "additionalNotes": {
+        "storyFunction": [
+          "Guides drug-induced vision quests",
+          "Facilitates trials by ordeal for warriors facing crisis",
+          "Helps interpret spiritual/ancestral guidance",
+          "Part of Iron Army mystical warrior culture"
+        ]
+      },
+      "storySignificance": [
+        "Represents Iron Army's mystical cultural elements",
+        "Provides the moment where Sek accepts moral compromise",
+        "Bridge between warrior past and present dilemmas",
+        "Her guidance enables the resolution"
+      ],
+      "thematicRole": [
+        {
+          "theme": "Cultural identity",
+          "description": "Embodies Iron Army traditions"
+        },
+        {
+          "theme": "Spiritual crisis",
+          "description": "Provides framework for impossible choices"
+        },
+        {
+          "theme": "Permission",
+          "description": "Gives Sek what he needs to act"
+        },
+        {
+          "theme": "Continuity",
+          "description": "Connects war generation to current struggles"
+        }
+      ]
+    }
+  ]
+}
