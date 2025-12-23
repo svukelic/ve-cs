@@ -56,19 +56,13 @@ async function loadCharacters() {
                 // Handle supporting cast file (contains array of characters)
                 if (charData.supportingCast && Array.isArray(charData.supportingCast)) {
                     return charData.supportingCast.map(char => {
-                        // Use image from JSON, fallback to old method if not available
-                        let imageUrl = char.basicInfo?.image;
-                        if (!imageUrl) {
-                            const imageName = extractImageName(char.characterId, jsonUrl);
-                            imageUrl = `https://svukelic.github.io/ve-cs/images/${imageName}.png`;
-                        }
                         return {
                             id: char.characterId || '',
                             name: char.basicInfo?.fullName || 'Unknown',
                             alias: char.basicInfo?.aliases?.[0] || '',
                             rank: char.basicInfo?.rank || char.basicInfo?.title || '',
                             association: char.basicInfo?.association || '',
-                            image: imageUrl,
+                            image: char.basicInfo?.image || '',
                             jsonUrl: jsonUrl,
                             characterData: char
                         };
@@ -76,19 +70,13 @@ async function loadCharacters() {
                 }
                 
                 // Handle single character file
-                // Use image from JSON, fallback to old method if not available
-                let imageUrl = charData.basicInfo?.image;
-                if (!imageUrl) {
-                    const imageName = extractImageName(charData.characterId, jsonUrl);
-                    imageUrl = `https://svukelic.github.io/ve-cs/images/${imageName}.png`;
-                }
                 return {
                     id: charData.characterId || '',
                     name: charData.basicInfo?.fullName || 'Unknown',
                     alias: charData.basicInfo?.aliases?.[0] || '',
                     rank: charData.basicInfo?.rank || '',
                     association: charData.basicInfo?.association || '',
-                    image: imageUrl,
+                    image: charData.basicInfo?.image || '',
                     jsonUrl: jsonUrl,
                     characterData: charData
                 };
@@ -153,21 +141,106 @@ function initializeGrid() {
 // Open book modal and load character data
 async function openCharacterBook(char) {
     try {
-        let data;
-        
-        // Use stored character data if available, otherwise fetch from URL
-        if (char.characterData) {
-            data = char.characterData;
-        } else {
-            const response = await fetch(char.jsonUrl);
-            data = await response.json();
+        if (!char) {
+            throw new Error('Character object is undefined');
         }
         
-        displayCharacterBook(data);
-        document.getElementById('bookModal').style.display = 'block';
+        console.log('Opening character book for:', char.name, char);
+        console.log('Character jsonUrl:', char.jsonUrl);
+        console.log('Character has characterData:', !!char.characterData);
+        
+        let data;
+        
+        // Use stored character data if available and valid, otherwise fetch from URL
+        if (char.characterData) {
+            // Check if characterData is valid (has at least characterId or basicInfo)
+            if (char.characterData.characterId || (char.characterData.basicInfo && char.characterData.basicInfo.fullName)) {
+                console.log('Using stored character data for:', char.characterData.characterId || char.characterData.basicInfo?.fullName);
+                data = char.characterData;
+            } else {
+                console.warn('Stored characterData exists but appears invalid, will try to fetch from URL');
+                // Fall through to fetch
+            }
+        }
+        
+        // If we don't have valid data yet, try to fetch
+        if (!data) {
+            if (!char.jsonUrl) {
+                throw new Error('Character data not available: missing both valid characterData and jsonUrl');
+            }
+            
+            console.log('Fetching character data from:', char.jsonUrl);
+            
+            // Validate URL format - only allow http/https URLs
+            if (typeof char.jsonUrl !== 'string' || char.jsonUrl.trim() === '') {
+                throw new Error(`Invalid jsonUrl: ${char.jsonUrl}`);
+            }
+            
+            // Reject file:// and other non-HTTP protocols
+            if (!char.jsonUrl.startsWith('http://') && !char.jsonUrl.startsWith('https://')) {
+                throw new Error(`Invalid URL protocol. Only http:// and https:// are allowed. Got: ${char.jsonUrl}`);
+            }
+            
+            try {
+                const response = await fetch(char.jsonUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
+                }
+                data = await response.json();
+            } catch (fetchError) {
+                // If fetch fails, provide a clear error message
+                const fetchErrorMsg = fetchError?.message || String(fetchError) || 'Unknown fetch error';
+                if (fetchErrorMsg.includes('Failed to fetch') || fetchErrorMsg.includes('CORS') || fetchErrorMsg.includes('file://')) {
+                    throw new Error(`Network error: Unable to fetch from ${char.jsonUrl}. Make sure you're running from a web server (not file://). Original error: ${fetchErrorMsg}`);
+                }
+                // Re-throw with better message if it doesn't have one
+                if (!(fetchError instanceof Error)) {
+                    throw new Error(`Fetch failed: ${fetchErrorMsg}`);
+                }
+                throw fetchError;
+            }
+        }
+        
+        // Final validation
+        if (!data) {
+            throw new Error('Character data is null or undefined');
+        }
+        
+        if (!data.characterId && (!data.basicInfo || !data.basicInfo.fullName)) {
+            throw new Error('Character data is missing required fields (characterId or basicInfo.fullName)');
+        }
+        
+        console.log('Character data loaded successfully:', data.characterId || data.basicInfo?.fullName);
+        
+        // Display the character book
+        try {
+            displayCharacterBook(data);
+            document.getElementById('bookModal').style.display = 'block';
+        } catch (displayError) {
+            console.error('Error displaying character book:', displayError);
+            throw new Error(`Failed to display character book: ${displayError?.message || String(displayError)}`);
+        }
     } catch (error) {
         console.error('Error loading character data:', error);
-        alert('Failed to load character data');
+        console.error('Character object:', char);
+        console.error('Error type:', typeof error);
+        console.error('Error message:', error?.message);
+        console.error('Error string:', String(error));
+        console.error('Error stack:', error?.stack);
+        
+        // Handle different error types
+        let errorMessage = 'Unknown error';
+        if (error instanceof Error) {
+            errorMessage = error.message || String(error);
+        } else if (typeof error === 'string') {
+            errorMessage = error;
+        } else if (error && typeof error === 'object') {
+            errorMessage = error.message || error.toString() || JSON.stringify(error);
+        } else {
+            errorMessage = String(error);
+        }
+        
+        alert('Failed to load character data: ' + errorMessage);
     }
 }
 
@@ -184,9 +257,21 @@ function displayCharacterBook(data) {
     const pages = createContentPages(data);
     pages.forEach(page => flipbook.appendChild(page));
 
+    // Initialize Turn.js - destroy existing instance if it exists
+    const $flipbook = $('#flipbook');
+    try {
+        // Check if Turn.js is already initialized by trying to get the page count
+        const pages = $flipbook.turn('pages');
+        if (pages && pages > 0) {
+            $flipbook.turn('destroy');
+        }
+    } catch (e) {
+        // Turn.js is not initialized yet, which is fine
+        console.log('Turn.js not initialized, will create new instance');
+    }
+    
     // Initialize Turn.js
-    $('#flipbook').turn('destroy');
-    $('#flipbook').turn({
+    $flipbook.turn({
         width: 800,
         height: 600,
         autoCenter: true,
@@ -470,11 +555,19 @@ function createPage(title, content) {
 }
 
 function updateControls() {
-    const currentPage = $('#flipbook').turn('page');
-    const totalPages = $('#flipbook').turn('pages');
-    
-    document.getElementById('prevBtn').disabled = currentPage === 1;
-    document.getElementById('nextBtn').disabled = currentPage === totalPages;
+    try {
+        const currentPage = $('#flipbook').turn('page');
+        const totalPages = $('#flipbook').turn('pages');
+        
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        if (prevBtn) prevBtn.disabled = currentPage === 1;
+        if (nextBtn) nextBtn.disabled = currentPage === totalPages;
+    } catch (e) {
+        // Turn.js might not be initialized yet
+        console.log('Could not update controls, Turn.js not initialized:', e);
+    }
 }
 
 // Event listeners
@@ -487,7 +580,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.close-btn').onclick = function() {
         document.getElementById('bookModal').style.display = 'none';
         if (currentBook) {
-            $('#flipbook').turn('destroy');
+            try {
+                $('#flipbook').turn('destroy');
+            } catch (e) {
+                // Turn.js might not be initialized
+                console.log('Could not destroy Turn.js instance:', e);
+            }
         }
     };
 
@@ -508,7 +606,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (event.target == modal) {
             modal.style.display = 'none';
             if (currentBook) {
-                $('#flipbook').turn('destroy');
+                try {
+                    $('#flipbook').turn('destroy');
+                } catch (e) {
+                    // Turn.js might not be initialized
+                    console.log('Could not destroy Turn.js instance:', e);
+                }
             }
         }
     };
@@ -526,7 +629,12 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (e.key === 'Escape') {
                 modal.style.display = 'none';
                 if (currentBook) {
-                    $('#flipbook').turn('destroy');
+                    try {
+                        $('#flipbook').turn('destroy');
+                    } catch (e) {
+                        // Turn.js might not be initialized
+                        console.log('Could not destroy Turn.js instance:', e);
+                    }
                 }
             }
         }
